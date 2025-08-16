@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  php:
+    build: .
+    container_name: phpunit-app
+    volumes:
+      - .:/app
+    working_dir: /app
+    tty: true
